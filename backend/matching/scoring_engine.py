@@ -1,6 +1,6 @@
 from sklearn.metrics.pairwise import cosine_similarity
-from backend.nlp.skill_extractor import extract_skills
-from backend.nlp.vectorizer import vectorize_texts
+from ..nlp.skill_extractor import extract_skills
+from ..nlp.vectorizer import vectorize_texts
 
 def compute_match_score(cv_text: str, job_text: str) -> float:
     # Skill overlap
